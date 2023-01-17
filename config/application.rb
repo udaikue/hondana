@@ -23,6 +23,12 @@ module Hondana
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # デフォルトで日本語表示にする
+    config.i18n.default_locale = :ja
+
+    # タイムゾーンを Tokyo(日本) にする
+    config.time_zone = "Tokyo"
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
