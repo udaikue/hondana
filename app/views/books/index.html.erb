@@ -1,0 +1,56 @@
+<div>
+  <h1 class="font-bold text-4xl">hondana</h1>
+
+  <div class="mt-6">
+    <h2 class="font-bold text-xl">欲しい</h1>
+    <table class="table-auto">
+      <tbody>
+      <% @books.organize('want').each do |b| %>
+        <tr>
+          <td><%= b.title %></td>
+          <td></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="mt-6">
+    <h2 class="font-bold text-xl">積んでる</h1>
+    <table class="table-auto">
+      <tbody>
+      <% @books.organize('stack').each do |b| %>
+        <tr>
+          <td><%= b.title %></td>
+          <td></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="mt-6">
+    <h2 class="font-bold text-xl">読んでる</h1>
+    <table class="table-auto">
+      <tbody>
+      <% @books.organize('wip').each do |b| %>
+        <tr>
+          <td><%= b.title %></td>
+          <td></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="mt-6">
+    <h2 class="font-bold text-xl">読んだ</h1>
+    <table class="table-auto">
+      <tbody>
+      <% @books.organize('done').each do |b| %>
+        <tr>
+          <td><%= b.title %></td>
+          <td></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

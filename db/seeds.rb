@@ -1,8 +1,16 @@
 # frozen_string_literal: true
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+
+Book.create!(
+  [
+    { title: 'いかにして問題をとくか', status: 'wip' },
+    { title: 'マスタリング TCP/IP', status: 'stack' },
+    { title: 'UML モデリング入門', status: 'wip' },
+    { title: 'ちょうぜつソフトウェア設計入門', status: 'wip' },
+    { title: '独習 PHP', status: 'wip' },
+    { title: 'Web を支える技術', status: 'done' },
+    { title: 'パーフェクト Ruby on Rails', status: 'done' },
+    { title: 'Clean Agile', status: 'want' },
+    { title: 'プリンシプルオブプログラミング', status: 'want' },
+    { title: 'アルゴリズム図鑑', status: 'want' }
+  ]
+)
